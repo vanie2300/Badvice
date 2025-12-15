@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Motivate Me (Badly)</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body class="mood-happy">
+  <div class="background-glow"></div>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Terrible Motivation Generator</p>
+        <h1>Motivate Me (Badly)</h1>
+        <p class="subhead">Choose a mood. Regret the advice.</p>
+      </div>
+      <div class="mood-selector" aria-label="Select a mood">
+        <button class="mood-btn" data-mood="happy">&#128516; <span>Happy</span></button>
+        <button class="mood-btn" data-mood="sad">&#128542; <span>Sad</span></button>
+        <button class="mood-btn" data-mood="angry">&#128544; <span>Angry</span></button>
+        <button class="mood-btn" data-mood="chill">&#128524; <span>Chill</span></button>
+        <button class="mood-btn" data-mood="savage">&#9889; <span>Savage</span></button>
+        <button class="mood-btn" data-mood="istarii">&#129497; <span>Istarii</span></button>
+        <button class="mood-btn" data-mood="dark">&#127761; <span>Dark</span></button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="quote-card">
+        <div class="quote-meta">
+          <span id="moodBadge" class="mood-badge">Happy</span>
+          <span id="copyStatus" class="status-pill" aria-live="polite"></span>
+        </div>
+        <blockquote id="quoteText" class="quote-text">
+          Smile like nothing's wrong. It probably is.
+        </blockquote>
+      </section>
+
+      <section class="actions">
+        <button id="generateBtn" class="action-btn primary">Generate</button>
+        <button id="copyBtn" class="action-btn ghost">Copy</button>
+        <button id="saveBtn" class="action-btn ghost">Save &#9733;</button>
+      </section>
+
+      <section class="favorites">
+        <header class="favorites-header">
+          <div>
+            <p class="eyebrow">Favorites</p>
+            <h2>Saved bad advice</h2>
+          </div>
+          <button id="clearFavBtn" class="tiny-btn">Clear all</button>
+        </header>
+        <div id="favoritesList" class="favorites-list">
+          <p class="empty">Nothing saved yet. Lower your standards and hit "Save".</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="quotes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
